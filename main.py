@@ -1,8 +1,9 @@
+# Python version of the app
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
 CLIENT_ID = "3a1f40eeff64406d8644cbab50ac0205"
-CLIENT_SECRET = "d82a8603d12d413aac38c33a139864e1"
+CLIENT_SECRET = "PUT-IN-HERE"
 REDIRECT_URI = "http://localhost:8080/callback"
 
 artists_by_stage = {
