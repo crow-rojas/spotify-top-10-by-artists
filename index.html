@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Top 10 Playlist Generator</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+
+<body class="bg-light">
+
+<div class="d-flex justify-content-center align-items-center pt-4">
+    <div class="col-md-6 text-center">
+        <img src="logo.png" alt="Logo" width="100" class="mb-4">
+        <h1 class="mb-4">Spotify Top 10 Playlist Generator</h1>
+
+        <div id="login-section" class="mb-4">
+            <button id="login" class="btn btn-primary btn-block">Login with Spotify</button>
+        </div>
+        <div id="user-section" class="d-none mb-4">
+            <button id="userinfo" class="btn btn-secondary btn-block mb-2"></button>
+            <button id="logout" class="btn btn-danger btn-block mb-2">Logout</button>
+        </div>
+
+        <label for="artist-list">Enter artists (each artist on a new line):</label>
+        <textarea id="artist-list" class="form-control mb-4" placeholder="Enter artists separated by line breaks" style="height: 150px;"></textarea>
+        
+        <label for="playlist-name">Playlist Name:</label>
+        <input id="playlist-name" class="form-control mb-4" type="text" placeholder="Playlist Name" value="Top 10 Tracks by Artists">
+        
+        <button id="generate" class="btn btn-success btn-block mb-4">Generate Playlist</button>
+        <a id="open-playlist" class="btn btn-info btn-block d-none" href="#" target="_blank">Open Playlist</a>
+        <div id="feedback" class="mb-4"></div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+
+</html>
+
